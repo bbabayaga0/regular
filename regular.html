@@ -3,7 +3,7 @@
  <head> 
   <meta charset="UTF-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-  <title>Document</title> 
+  <title>06.11.23</title> 
  </head> 
  <body> 
   <input type="text" id="val" /> 
@@ -15,20 +15,16 @@
     let ipv4 = 
      /^(\s*|.*\s+)(25[0-5]\.|2[0-4]\d\.|1\d\d\.|[1-9]\d\.|\d\.){3}(25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(\s*|\s+.*)$/ 
     let ipv6 = /^(\s*|.*\s+)([0-9a-f]{4}:){7}[0-9a-f]{4}(\s*|\s +.*)$/i 
-    let paragr = document.getElementsByTagName('p')[0] 
+    let output = document.getElementsByTagName('p')[0] 
  
     if (ipv4.test(val)) { 
-     paragr.innerText = 'Корректный IPv4' 
+     output.innerText = 'корректный IPv4' 
     } else if (ipv6.test(val)) { 
-     paragr.innerText = 'Корректный IPv6' 
+     output.innerText = 'корректный IPv6' 
     } else { 
-     paragr.innerText = 'Некорректный IP!' 
+     output.innerText = 'Ннекорректный IP!' 
     } 
    } 
   </script> 
  </body> 
-
-
-
-
- <!-- 2001:0db8:85a3:0000:0000:8a2e:0370:7334. ipv6 -->
+ <!-- 2001:0db8:85a3:0000:0000:8a2e:0370:7334 -->
